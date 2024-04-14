@@ -8,8 +8,10 @@ VOLUME $WORK_DIR
 WORKDIR $WORK_DIR
 
 RUN echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
-  sudo apt update
-  sudo apt install --no-install-recommends -y \
+
+RUN sudo apt update
+
+RUN sudo apt install --no-install-recommends -y \
     wget \
     git \
     make \
