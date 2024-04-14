@@ -27,7 +27,8 @@ RUN apt update && \
         ttf-mscorefonts-installer \
         fonts-freefont-ttf \
         fontconfig \
-        ghostscript
+        ghostscript \
+        cm-super
 
 RUN wget https://github.com/stipub/stixfonts/raw/master/zipfiles/static_otf.zip
 RUN unzip -o static_otf.zip -d /usr/share/fonts/
