@@ -21,6 +21,8 @@ RUN apt update && \
         texlive-lang-cyrillic \
         texlive-science \
         texlive-latex-recommended \
+        texlive-fonts-extra \
+        texlive-plain-generic \
         latexmk \
         ttf-mscorefonts-installer \
         fonts-freefont-ttf \
