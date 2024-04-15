@@ -28,7 +28,11 @@ RUN apt update && \
         fonts-freefont-ttf \
         fontconfig \
         ghostscript \
-        cm-super
+        cm-super \
+        python3 \
+        python3-pip
+
+RUN pip3 install jupyter
 
 RUN wget https://github.com/stipub/stixfonts/raw/master/zipfiles/static_otf.zip
 RUN unzip -o static_otf.zip -d /usr/share/fonts/
