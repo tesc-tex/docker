@@ -36,7 +36,8 @@ RUN apt install --no-install-recommends -y \
         python3-scipy \
         python3-numpy \
         python3-pandas \
-        python3-matplotlib
+        python3-matplotlib \
+        dvipng
         
 
 RUN wget https://github.com/stipub/stixfonts/raw/master/zipfiles/static_otf.zip
