@@ -28,9 +28,15 @@ RUN apt update && \
         fonts-freefont-ttf \
         fontconfig \
         ghostscript \
-        cm-super \
+        cm-super
+
+RUN apt install --no-install-recommends -y \
         python3 \
-        jupyter-notebook
+        jupyter-notebook \
+        python3-scipy \
+        python3-numpy \
+        python3-pandas \
+        python3-mathplotlib
         
 
 RUN wget https://github.com/stipub/stixfonts/raw/master/zipfiles/static_otf.zip
