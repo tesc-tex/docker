@@ -36,7 +36,7 @@ RUN apt install --no-install-recommends -y \
         python3-scipy \
         python3-numpy \
         python3-pandas \
-        python3-mathplotlib
+        python3-matplotlib
         
 
 RUN wget https://github.com/stipub/stixfonts/raw/master/zipfiles/static_otf.zip
