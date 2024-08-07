@@ -1,7 +1,6 @@
 # docker
 
-Use this script in project directory to build (or rebuild) `.pdf`.
-It assumes that `build.sh` exists in project's root.
+Use this script in project directory to build (or rebuild) `.pdf` locally.
 
 ```sh
 #!/usr/bin/env sh
