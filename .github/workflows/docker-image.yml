@@ -26,7 +26,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        images: isagila/docker-latex
+        images: isagila/latex
         tags: |
           type=semver,pattern={{version}}
           type=semver,pattern={{major}}.{{minor}}

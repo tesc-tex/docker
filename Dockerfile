@@ -29,18 +29,3 @@ RUN apt update && \
         fontconfig \
         ghostscript \
         cm-super
-
-RUN apt install --no-install-recommends -y \
-        python3 \
-        jupyter-notebook \
-        python3-scipy \
-        python3-numpy \
-        python3-pandas \
-        python3-matplotlib \
-        dvipng
-        
-
-RUN wget https://github.com/stipub/stixfonts/raw/master/zipfiles/static_otf.zip
-RUN unzip -o static_otf.zip -d /usr/share/fonts/
-RUN rm -f static_otf.zip
-RUN fc-cache -f -v
