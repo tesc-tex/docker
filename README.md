@@ -1,4 +1,4 @@
-# docker-latex
+# docker
 
 Use this script in project directory to build (or rebuild) `.pdf`.
 It assumes that `build.sh` exists in project's root.
